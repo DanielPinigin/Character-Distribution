@@ -36,13 +36,27 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+import string
 
-#sent = str(input("Please enter a string of text (the bigger the better): "))
+sent = str(input("Please enter a string of text (the bigger the better): "))
 
 print('The distribution of characters in "{0}" is: '.format(sent))
 
 sent1 = sent.lower()
 
+sent1 = list(sent1)
+
+for c in string.ascii_lowercase:
+    print(c)
+print(sent1)
+
+#figure out function to identify how many times a letter in the alphabet occurs in the input sent1
+
+thelist = [sent1.count(c) for c in string.ascii_lowercase]
+print(thelist)
+
+numb = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26']
+zip(thelist,numb)
 
 
-zip take 2 lists put together 
+#'a string has several characters'.count('c')
