@@ -56,7 +56,8 @@ thelist = [sent1.count(c) for c in string.ascii_lowercase]
 print(thelist)
 
 numb = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26']
-zip(thelist,numb)
+z = zip(thelist,numb)
+print(list(zip(thelist,numb)))
 
 
 #'a string has several characters'.count('c')
