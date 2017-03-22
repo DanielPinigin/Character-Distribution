@@ -55,7 +55,7 @@ numb = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','
 z = zip(thelist,numb)
 print(list(zip(thelist,numb)))
 
-[x for (thelist,numb) in sorted(zip(thelist,numb), key=lambda pair: pair[0])] 
-print(numero)
+v = [x for (y,x) in sorted(zip(thelist,numb), key=lambda pair: pair[0])] 
+print(v)
 
 #'a string has several characters'.count('c')
