@@ -60,3 +60,5 @@ print(zs)
 thelist, alph=zip(*zs)
 print(alph)
 
+for x in alph:
+    print(x*sent1.count(x))
