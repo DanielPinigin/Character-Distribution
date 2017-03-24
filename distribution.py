@@ -51,10 +51,12 @@ sent1 = list(sent1)
 thelist = [sent1.count(c) for c in string.ascii_lowercase]
 print(thelist)
 
-numb = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-z = list(zip(thelist,numb))
+alph = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+z = list(zip(thelist,alph))
 print(z)
 zs = sorted(z, reverse = True)
 print(zs)
 
-#'a string has several characters'.count('c')
+thelist, alph=zip(*zs)
+print(alph)
+
