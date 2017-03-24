@@ -49,16 +49,16 @@ sent1 = list(sent1)
 #figure out function to identify how many times a letter in the alphabet occurs in the input sent1
 
 thelist = [sent1.count(c) for c in string.ascii_lowercase]
-print(thelist)
+#print(thelist)
 
 alph = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 z = list(zip(thelist,alph))
-print(z)
+#print(z)
 zs = sorted(z, reverse = True)
-print(zs)
+#print(zs)
 
 thelist, alph=zip(*zs)
-print(alph)
+#print(alph)
 
 for x in alph:
     print(x*sent1.count(x))
