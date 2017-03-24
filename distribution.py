@@ -61,5 +61,5 @@ thelist, alph=zip(*zs)
 #print(alph)
 
 for x in alph:
-    if x < 1:
+    if x < int(1):
         print(x*sent1.count(x))
