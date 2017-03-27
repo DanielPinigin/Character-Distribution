@@ -1,7 +1,7 @@
 """
 distribution.py
-Author:Daniel
-Credit:  Whily Kyotee (kyle)
+Author: Daniel
+Credit:  Dennison, Kyle, Brendan
 
 Assignment:
 
@@ -52,7 +52,7 @@ thelist = [sent1.count(c) for c in string.ascii_lowercase]
 #print(thelist)
 
 alph = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-#alph1 = alph.reverse()
+
 
 z = list(zip(thelist,alph))
 #print(z)
