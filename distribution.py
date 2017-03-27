@@ -56,7 +56,7 @@ alph = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r',
 
 z = list(zip(thelist,alph))
 #print(z)
-zs = sorted(z, reverse = True)
+zs = sorted(reverse = True, z)
 #print(zs)
 
 thelist, alph=zip(*zs)
