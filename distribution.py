@@ -52,15 +52,15 @@ thelist = [sent1.count(c) for c in string.ascii_lowercase]
 #print(thelist)
 
 alph = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-#alph1 = alph.reverse()
+alph1 = alph.reverse()
 
-z = list(zip(thelist,alph))
+z = list(zip(thelist,alph1))
 #print(z)
-zs = sorted(reverse = True, z)
+zs = sorted(z, reverse = True)
 #print(zs)
 
-thelist, alph=zip(*zs)
+thelist, alph1=zip(*zs)
 #print(alph)
 
-for x in alph:
+for x in alph1:
     print(x*sent1.count(x))
