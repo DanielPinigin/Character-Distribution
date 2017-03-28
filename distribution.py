@@ -88,5 +88,5 @@ tosort = [4, 10, 3, -1000, 30]
 bsort(z, compare)
 print(z)
 for x, y in z:
-    if x != 0
-    print(x*y)
+    if x != 0:
+        print(x*y)
