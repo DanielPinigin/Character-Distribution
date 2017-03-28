@@ -65,7 +65,7 @@ def compare(a, b):
     """
     compare - generic comparison function for testing two elements.
     """
-    return b < a 
+    return b > a 
 
 
 def bsort(seq, cmp):
@@ -87,5 +87,6 @@ def bsort(seq, cmp):
 tosort = [4, 10, 3, -1000, 30]
 bsort(z, compare)
 print(z)
-for x in alph:
-    print(x*sent1.count(x))
+for x, y in z:
+    if x != 0
+    print(x*y)
