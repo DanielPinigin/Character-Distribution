@@ -61,5 +61,31 @@ zs = sorted(z, reverse = True)
 thelist, alph=zip(*zs)
 #print(alph)
 
+def compare(a, b):
+    """
+    compare - generic comparison function for testing two elements.
+    """
+    return b < a 
+
+
+def bsort(seq, cmp):
+    """
+    bsort - simple sorting algorithm that uses any comparison function
+    seq - a list to be sorted
+    cmp - a function for comparing two elements of seq
+    """
+    sorted = False  # assume the seq is not sorted to start with
+    while not sorted:
+        sorted = True   # assume it's already sorted correctly
+        for index, value in enumerate(seq): # for every element in seq
+            if index > 0:                   # past the first..
+                if not cmp(seq[index-1], value):  # if this element is out of order
+                    sorted = False          # then the list is not sorted yet
+                    seq[index-1], seq[index] = seq[index], seq[index-1] # and swap it
+
+    
+tosort = [4, 10, 3, -1000, 30]
+bsort(z, compare)
+print(z)
 for x in alph:
     print(x*sent1.count(x))
