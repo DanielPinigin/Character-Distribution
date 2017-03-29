@@ -65,8 +65,19 @@ def compare(a, b):
     """
     compare - generic comparison function for testing two elements.
     """
-    return b > a 
-
+    acount = a[0]
+    aletter = a[1]
+    bcount = b[0]
+    bletter = b[1]
+    if acount > bcount:
+        return True
+    elif acount < bcount:
+        return False
+    else:
+        if aletter < bletter:
+            return True
+        elif aletter > bletter:
+            return False
 
 def bsort(seq, cmp):
     """
