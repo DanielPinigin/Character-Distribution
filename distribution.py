@@ -100,4 +100,4 @@ bsort(z, compare)
 print(z)
 for x, y in z:
     if x != 0:
-        print(x*y)
+      #  print(x*y)
